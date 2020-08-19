@@ -20,3 +20,5 @@ const licenseBadges = {
     unlicense: "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)",
     zlib: "[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)",
 };
+
+module.exports.licenseBadges = licenseBadges;

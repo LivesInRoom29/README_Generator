@@ -1,5 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const licenses = require('./licenses.js');
 
 // Array of questions to use with inquirer
 const questions = [
