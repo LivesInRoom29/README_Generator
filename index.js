@@ -1,6 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
+// Array of questions to use with inquirer
 const questions = [
     {
         type: 'input',
@@ -87,3 +88,16 @@ const questions = [
 const promptUser = () => {
     return inquirer.prompt(questions)
 }
+
+// from starter code:
+// function to write README file
+function writeToFile(fileName, data) {
+}
+
+// function to initialize program
+function init() {
+
+}
+
+// function call to initialize program
+init();

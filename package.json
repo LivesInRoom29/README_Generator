@@ -1,7 +1,7 @@
 {
   "name": "readme_generator",
   "version": "1.0.0",
-  "description": "\"A command-line application created with Node.js to take input from the user and use that to generate a professional README.md for a project.\"",
+  "description": "A command-line application created with Node.js to take input from the user and use that to generate a professional README.md for a project.",
   "main": "index.js",
   "dependencies": {
     "inquirer": "^7.3.3"
@@ -14,8 +14,8 @@
     "url": "git+https://github.com/LivesInRoom29/README_Generator.git"
   },
   "keywords": [
-    "\"README",
-    "Node.js\""
+    "README",
+    "Node.js"
   ],
   "author": "molly_kizer <molly.kizer@gmail.com>",
   "license": "UNLICENSED",
