@@ -86,10 +86,57 @@ const promptUser = () => {
     return inquirer.prompt(questions);
 }
 
+// Destructure the answers object into indiviudual elements and use those to fill in sections of the readme
+// Uses the license type from answers to get the correct badge from the licenseBadges object in the licenses file
+// Template literal is not indented to prevent indentation in the file.
+const generateREADME = ({username, email, title, description, url, installation, usage, license, contribution, testing}) => {
+    // return ``
+    console.log(`
+# ${title}
+${licenses.licenseBadges[license]}
 
-const generateREADME = (answers) => {
-    return ``
-}
+## Description
+${description}
+
+[Link to Deployed Project](${url})
+
+
+## Table of Contents
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [License](#license)
+4. [Contributing](#contributing)
+5. [Tests](#tests)
+6. [Questions](#questions)
+
+
+
+## Installation
+To install the necessary dependencies, run:
+\`\`\`
+${installation}
+\`\`\`
+
+## Usage
+${usage}
+
+## License
+This project is licensed under the ${license} license.
+
+## Contributing
+${contribution}
+
+## Tests
+In order to run tests on the project, run:
+\`\`\`
+${testing}
+\`\`\`
+
+## Questions
+If you have any question about this project or repository, please open an issue or contact me at [${email}](mailto:${email}?subject=[GitHub]%20${title}).
+
+You can find more of my work at GitHub under my username [${username}](https://github.com/${username}).`)
+};
 
 // from starter code:
 // function to write README file
