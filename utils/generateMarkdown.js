@@ -1,6 +1,5 @@
 const licenses = require('./licenses.js');
 
-
 // function to generate markdown for README
 // Destructure the answers object into indiviudual elements and use those to fill in sections of the readme
 // Uses the license type from answers to get the correct badge from the licenseBadges object in the licenses file
@@ -48,9 +47,10 @@ ${testing}
 \`\`\`
 
 ## Questions
-If you have any question about this project or repository, please open an issue or contact me at [${email}](mailto:${email}?subject=[GitHub]%20${title}).
+If you have any question about this project or repository, please open an issue or contact me at [${email}](mailto:${email}).
 
 You can find more of my work at GitHub under my username [${username}](https://github.com/${username}).`
 };
 
-module.exports = generateMarkdown;
+// Export the function to be used in other files (index.js)
+module.exports = { generateMarkdown };
