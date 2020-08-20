@@ -1,3 +1,5 @@
+// Credits: badges posted by lukas -h - https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+
 const licenseBadges = {
     "apache-2.0": "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
     "bsl-1.0": "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)",
