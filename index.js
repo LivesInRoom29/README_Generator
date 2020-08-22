@@ -13,7 +13,6 @@ const requireEmail = (value) => {
     return 'Please enter a valid email address.'
 }
 
-
 // Array of questions to use with inquirer
 const questions = [
     {
@@ -102,7 +101,7 @@ const promptUser = () => {
 // from starter code:
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => {
+    fs.writeFile(`./output/${fileName}`, data, (err) => {
         if (err) {
             return console.log(err)
         }
@@ -118,7 +117,7 @@ const init = async () => {
 
         const readme = generateMD.generateMarkdown(answers);
 
-        await writeToFile('README1.md', readme);
+        await writeToFile('README.md', readme);
 
     } catch(err) {
         console.log(err);
