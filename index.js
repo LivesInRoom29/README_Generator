@@ -34,7 +34,7 @@ const questions = [
     {
         type: 'editor',
         name: 'description',
-        message: 'Write a description of your project. Save and close your editor when done.'
+        message: 'Write a description of your project. (Markdown supported.) Save and close your editor when done.'
     },
     {
         type: 'input',
@@ -50,12 +50,12 @@ const questions = [
     {
         type: 'editor',
         name: 'usage',
-        message: 'What are the instructions for using your project? Save and close your editor when done.',
+        message: 'What are the instructions for using your project? (Markdown supported.) Save and close your editor when done.',
     },
     {
         type: 'expand',
         name: 'license',
-        message: 'How are you licensing your project?',
+        message: 'How are you licensing your project? (Choose H to see all options.)',
         choices: [
             {key:'a', name: 'Apache License', value: 'apache-2.0'},
             {key:'b', name: 'Boost Software License', value: 'bsl-1.0'},
@@ -91,6 +91,12 @@ const questions = [
         message: 'What command should be used to run tests on your project?',
         default: 'npm test'
     },
+    {
+        type: 'input',
+        name: 'credits',
+        message: 'Who would you like to credit for any assistance or resources used to create your project?',
+        default: 'My mom...'
+    }
 ];
 
 // Use the inquirer module to get user input (answers to the questions).
