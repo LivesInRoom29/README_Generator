@@ -37,7 +37,7 @@ ${usage}
 
 
 ## License
-This project is licensed under the ${license} license.
+This project is licensed under the **${license}** license.
 
 
 ## Contributing
